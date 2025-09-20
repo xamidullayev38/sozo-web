@@ -37,12 +37,12 @@
 </template>
 
 <script setup>
-  const images = [
-    require("../assets/img/img1.png"),
-    require("../assets/img/img2.png"),
-    require("../assets/img/img3.png"),
-    require("../assets/img/img4.png"),
-  ];
+import img1 from "../assets/img/sp1.png"
+import img2 from "../assets/img/sp2.png"
+import img3 from "../assets/img/sp3.png"
+import img4 from "../assets/img/sp4.png"
+
+const images = [img1, img2, img3, img4];
 </script>
 
 <style>
