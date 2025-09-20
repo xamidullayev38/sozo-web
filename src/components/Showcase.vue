@@ -13,23 +13,23 @@
     </div>
 
     <!-- Ong taraf -->
-    <div class="absolute rotate-[-15deg] right-0 grid grid-cols-2 md:grid-cols-5 gap-4 mt-12 showcase">
+    <div class="absolute  right-[-60px] grid grid-cols-2 md:grid-cols-5 gap-4 mt-12 showcase">
       <!-- Har bir ustun uchun -->
       <div
         v-for="(col, idx) in 5"
         :key="idx"
         :class="[
-          'flex flex-col gap-4',
+          'flex flex-col gap-4 rotate-[-15deg]',
           idx % 2 === 0 ? 'animate-scrollDown' : 'animate-scrollUp'
         ]"
-        :style="{ animationDuration: `${30 + idx * 10}s` }"
+        :style="{ animationDuration: `${90 + idx * 10}s` }"
       >
         <div
-          v-for="(img, i) in [...images, ...images]"
+          v-for="(img, i) in [...imageArray]"
           :key="idx + '-' + i"
           class="w-[140px] h-[200px] bg-gray-700 rounded-lg shadow-lg flex-shrink-0 overflow-hidden"
         >
-          <img :src="img" alt="anime" class="w-full h-full object-cover" />
+          <img :src="img" alt="anime" class="w-full h-full object-cover bg-cover " />
         </div>
       </div>
     </div>
@@ -37,12 +37,11 @@
 </template>
 
 <script setup>
-import img1 from "../assets/img/sp1.png"
-import img2 from "../assets/img/sp2.png"
-import img3 from "../assets/img/sp3.png"
-import img4 from "../assets/img/sp4.png"
+  const images = import.meta.glob('../assets/img/card-img/*.png', { eager: true });
 
-const images = [img1, img2, img3, img4];
+  const imageArray = Object.values(images).map((module) => module.default);
+
+
 </script>
 
 <style>
