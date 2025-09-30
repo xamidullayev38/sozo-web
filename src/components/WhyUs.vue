@@ -1,13 +1,28 @@
 <template>
   <section class="py-20 bg-[#191b1f] text-center">
     <h2 class="text-3xl font-bold mb-8">Why us? ✨</h2>
-    <p class="text-lg text-gray-300 mb-8">
-        Every episode. Every season. Every story. Watch anime in the highest quality, anytime, anywhere, with Sozo.
+    <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+      Every episode. Every season. Every story. Watch anime in the highest
+      quality, anytime, anywhere, with Sozo.
     </p>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl mx-auto ">
-      <div v-for="(item, i) in features" :key="i" class="w-[224px] flex flex-col items-center justify-center ">
-        <img :src="item.icon + (i + 1) + '.png'" alt="" >
-        <h3 class="font-semibold">{{ item.title }}</h3>
+
+    <!-- grid responsiveness -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto px-4"
+    >
+      <div
+        v-for="(item, i) in features"
+        :key="i"
+        class="flex flex-col items-center justify-center text-center p-4 rounded-2xl bg-[#1f2126] hover:bg-[#25272c] transition"
+      >
+        <img
+          :src="item.icon + (i + 1) + '.png'"
+          alt=""
+          class="w-20 h-20 object-contain mb-4"
+        />
+        <h3 class="font-semibold text-gray-200 text-lg">
+          {{ item.title }}
+        </h3>
       </div>
     </div>
   </section>
