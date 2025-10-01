@@ -32,10 +32,14 @@
 </template>
 
 <script setup>
+import img1 from "@/assets/img/1.png"
+import img2 from "@/assets/img/2.png"
+import img3 from "@/assets/img/3.png"
+import img4 from "@/assets/img/4.png"
 const features = [
-  { icon: "/src/assets/img/", title: "+1000 Anime Episodes" },
-  { icon: "/src/assets/img/", title: "Watch anytime, anywhere" },
-  { icon: "/src/assets/img/", title: "More info about casters" },
-  { icon: "/src/assets/img/", title: "All in the highest quality" },
+  { icon: "img1", title: "+1000 Anime Episodes" },
+  { icon: "img2", title: "Watch anytime, anywhere" },
+  { icon: "img3", title: "More info about casters" },
+  { icon: "img4", title: "All in the highest quality" },
 ]
 </script>
