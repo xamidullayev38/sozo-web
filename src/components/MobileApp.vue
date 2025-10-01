@@ -1,8 +1,17 @@
 <template>
   <section class="py-20 bg-gray-800">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center px-4">
-      <img src="../assets//img/scrren.png" alt="App preview" class="rounded-xl shadow-lg" />
-      <div>
+      <!-- Chapdagi rasm -->
+      <img 
+        src="../assets/img/scrren.png" 
+        alt="App preview" 
+        class="rounded-xl shadow-lg" 
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      />
+
+      <!-- O‘ngdagi matn -->
+      <div data-aos="fade-left" data-aos-duration="1000">
         <h2 class="max-w-[560px] text-4xl font-bold mb-[40px]">
           Download our app to your phone, and join the adventure 
         </h2>

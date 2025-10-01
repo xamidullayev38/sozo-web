@@ -1,7 +1,9 @@
 <template>
   <section class="py-20 bg-[#191b1f] text-center">
-    <h2 class="text-3xl font-bold mb-8">Why us? ✨</h2>
-    <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+    <h2 class="text-6xl font-bold mb-8 wow animate__animated animate__jackInTheBox" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">Why us? ✨</h2>
+    <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
       Every episode. Every season. Every story. Watch anime in the highest
       quality, anytime, anywhere, with Sozo.
     </p>
@@ -14,7 +16,8 @@
         v-for="(item, i) in features"
         :key="i"
         class="flex flex-col items-center justify-center text-center p-4 rounded-2xl bg-[#1f2126] hover:bg-[#25272c] transition"
-      >
+        data-aos="flip-left" data-aos-duration="800" :data-aos-delay="i * 200"
+        >
         <img
           :src="item.icon + (i + 1) + '.png'"
           alt=""
