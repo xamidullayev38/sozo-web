@@ -18,9 +18,9 @@
         <p class="text-gray-400 mb-6 text-xl">
           Sozo is your ultimate anime streaming app, designed for fans by fans. Dive into a massive library of anime series and movies — from iconic classics to the latest seasonal hits — all in one place.
         </p>
-        <button class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg text-lg font-semibold">
+        <a class="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg text-lg font-semibold" href="https://t.me/+pgYjGEUfRQtiZWYy">
           Visit Telegram
-        </button>
+        </a>
       </div>
     </div>
   </section>

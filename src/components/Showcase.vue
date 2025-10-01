@@ -23,14 +23,15 @@
         fast streaming, and offline downloads.
       </p>
 
-      <button
+      <a
         class="px-6 py-3 bg-red-500 hover:bg-red-600 rounded-lg text-base sm:text-lg font-semibold"
         data-aos="zoom-in"
         data-aos-delay="400"
         data-aos-duration="1000"
+        href="https://t.me/sozoapp"
       >
         Download App
-      </button>
+      </a>
     </div>
   </section>
 </template>

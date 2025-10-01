@@ -20,13 +20,14 @@
       </p>
 
       <!-- Button -->
-      <button 
+      <a 
+        href="https://github.com/Sozo-app/Sozo-tv"
         class="px-6 py-3 bg-gray-700 hover:bg-gray-600 rounded-lg mb-8 text-white font-semibold"
         data-aos="zoom-in"
         data-aos-duration="1400"
       >
         <i class="fa-brands fa-github mr-2"></i> GitHub
-      </button>
+      </a>
 
       <!-- Image -->
       <img 
