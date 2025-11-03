@@ -16,4 +16,8 @@ import Showcase from "./components/Showcase.vue"
 import MobileApp from "./components/MobileApp.vue"
 import TvApp from "./components/TvApp.vue"
 import Footer from "./components/Footer.vue"
+
+import { useSmoothScroll } from './composables/useScroll'
+
+  useSmoothScroll(0.25,0.05)
 </script>

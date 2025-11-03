@@ -1,5 +1,54 @@
-# Vue 3 + Vite
+# Sozo Anime App 🎥
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A simple landing page for **Sozo**, an anime streaming app.  
+Built with **Vue 3**, **Vite**, **TailwindCSS**, and **AOS animations**.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+---
+
+## ✨ Features
+- 🎨 Modern UI with TailwindCSS  
+- 📱 Responsive design for all devices  
+- 🎞 Smooth scroll animations with AOS  
+- ⚡ Fast development with Vite  
+
+---
+
+## 🛠 Tech Stack
+- [Vue 3](https://vuejs.org/)  
+- [Vite](https://vite.dev/)  
+- [TailwindCSS](https://tailwindcss.com/)  
+- [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)  
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/sozo-anime-app.git
+cd sozo-anime-app
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the project:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+---
+
+## 📄 License
+This project is open source and available under the [MIT License](LICENSE).
