@@ -2,12 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue</title>
+
+    <!-- Primary meta -->
+    <title>Sozo — Every anime, right in your hands</title>
+    <meta name="description" content="Sozo is the anime streaming app: 1000+ series and movies in crystal-clear HD with multi-language subtitles, fast streaming and offline downloads. Available on Android TV, Android and desktop." />
+    <meta name="keywords" content="Sozo, anime, streaming, watch anime, anime app, Android TV, anime HD, subtitles, offline anime" />
+    <meta name="author" content="Sozo" />
+    <meta name="theme-color" content="#7C5CFF" />
+    <link rel="canonical" href="https://sozo.azamov.me/" />
+
+    <!-- Icons / PWA -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Sozo" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sozo" />
+    <meta property="og:title" content="Sozo — Every anime, right in your hands" />
+    <meta property="og:description" content="Stream 1000+ anime titles in HD on phone, TV and desktop. Multi-language subtitles, fast streaming, offline downloads." />
+    <meta property="og:url" content="https://sozo.azamov.me/" />
+    <meta property="og:image" content="https://sozo.azamov.me/og.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sozo — Every anime, right in your hands" />
+    <meta name="twitter:description" content="Stream 1000+ anime titles in HD on phone, TV and desktop." />
+    <meta name="twitter:image" content="https://sozo.azamov.me/og.svg" />
+
+    <!-- Perf: warm up the API + CDN origins early -->
+    <link rel="preconnect" href="https://apisozo.azamov.me" crossorigin />
+    <link rel="preconnect" href="https://sozo.cdn.azamov.me" crossorigin />
+    <link rel="dns-prefetch" href="https://apisozo.azamov.me" />
+
+    <!-- Structured data: helps search engines show the app as a rich result -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Sozo",
+      "applicationCategory": "EntertainmentApplication",
+      "operatingSystem": "Android, Android TV",
+      "description": "Anime streaming app with 1000+ HD titles, multi-language subtitles and offline downloads.",
+      "url": "https://sozo.azamov.me/",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
+    </script>
   </head>
   <body>
     <div id="app"></div>
+    <noscript>Sozo — the anime streaming app. Please enable JavaScript to view the site, or download the app for Android TV and Android.</noscript>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

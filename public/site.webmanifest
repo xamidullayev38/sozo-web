@@ -1,0 +1,12 @@
+{
+  "name": "Sozo — Anime Streaming",
+  "short_name": "Sozo",
+  "description": "Every anime, right in your hands. Stream 1000+ titles in HD on phone, TV and desktop.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08080C",
+  "theme_color": "#7C5CFF",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
