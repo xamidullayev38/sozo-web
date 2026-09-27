@@ -19,20 +19,20 @@
       </div>
 
       <!-- Module Selector Tab Bar -->
-      <div class="flex flex-wrap gap-px bg-white/10 p-px mb-12">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 p-px mb-12">
         <button
           v-for="(mod, i) in modules"
           :key="mod.id"
           @click="activeIndex = i"
           :class="[
-            'px-6 py-4 font-mono text-xs uppercase tracking-wider transition-all duration-200 flex items-center gap-3',
+            'w-full px-4 sm:px-6 py-3.5 sm:py-4 font-mono text-[11px] sm:text-xs uppercase tracking-wider transition-all duration-200 flex items-center justify-between sm:justify-start sm:gap-3',
             activeIndex === i
               ? 'bg-[#FF3B30] text-white font-bold'
               : 'bg-[#111116] text-[#858592] hover:text-white hover:bg-[#16161D]'
           ]"
         >
           <span>{{ mod.code }}</span>
-          <span>// {{ mod.name }}</span>
+          <span class="truncate">// {{ mod.name }}</span>
         </button>
       </div>
 
