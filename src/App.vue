@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans bg-gray-900 text-white">
+  <div class="font-sans bg-gray-900 text-white min-h-screen selection:bg-red-500 selection:text-white">
     <Hero />
     <WhyUs />
     <Showcase />
@@ -17,7 +17,8 @@ import MobileApp from "./components/MobileApp.vue"
 import TvApp from "./components/TvApp.vue"
 import Footer from "./components/Footer.vue"
 
-import { useSmoothScroll } from './composables/useScroll'
+import { useSmoothScroll } from './composables/useSmoothScroll'
 
-  useSmoothScroll(0.25,0.05)
+// Initialize modern Lenis smooth scrolling engine
+useSmoothScroll()
 </script>
