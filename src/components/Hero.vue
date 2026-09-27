@@ -1,157 +1,147 @@
 <template>
-  <section class="relative min-h-[100dvh] pt-32 pb-24 md:pt-40 md:pb-36 overflow-hidden flex flex-col justify-between bg-[#08080B] perspective-1400">
-    <!-- Ambient Background Radial Lighting -->
+  <section id="overview" class="relative min-h-[100dvh] pt-32 pb-24 md:pt-40 md:pb-36 bg-[#09090C] border-b border-white/[0.08] overflow-hidden blueprint-grid flex flex-col justify-between">
+    <!-- Background Watermark Parallax -->
     <div
-      v-parallax="{ speed: -0.2 }"
-      class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-gradient-to-tr from-[#7C5CFF]/15 to-[#FF5733]/15 blur-[140px] rounded-full pointer-events-none will-change-transform z-0"
-    ></div>
+      v-parallax="{ speed: -0.35 }"
+      class="absolute top-1/4 left-0 right-0 text-center select-none pointer-events-none opacity-[0.03] leading-none will-change-transform z-0"
+    >
+      <span class="font-display font-black text-[25vw] tracking-tighter text-white uppercase">
+        SOZO
+      </span>
+    </div>
 
-    <div class="relative z-10 max-w-6xl mx-auto px-6 md:px-12 w-full my-auto text-center flex flex-col items-center">
-      <!-- Eyebrow Badge -->
-      <div
-        v-parallax="{ speed: 0.05 }"
-        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 mb-8 backdrop-blur-md will-change-transform"
-      >
-        <span class="w-2 h-2 rounded-full bg-[#FF5733] animate-pulse"></span>
-        <span class="font-mono text-[11px] font-medium tracking-[0.16em] uppercase text-[#8E8E99]">
-          Version 3.2.0 is out
-        </span>
+    <!-- Main Editorial Chamber -->
+    <div class="relative z-10 max-w-7xl mx-auto px-6 w-full my-auto">
+      <!-- Technical Telemetry Header Line -->
+      <div class="flex items-center justify-between border-b border-white/[0.08] pb-4 mb-10 font-mono text-[11px] text-[#858592] uppercase tracking-widest">
+        <div class="flex items-center gap-3">
+          <span class="inline-block w-2 h-2 bg-[#FF3B30]"></span>
+          <span>SYS.SPEC // PUBLIC RELEASE V3.2.0</span>
+        </div>
+        <div class="hidden sm:flex items-center gap-6">
+          <span>GPL-3.0 OPEN ARCHITECTURE</span>
+          <span>ZERO TELEMETRY</span>
+        </div>
       </div>
 
-      <!-- Main Headline: Ultra-wide, 2 lines max guaranteed -->
-      <h1
-        v-parallax="{ speed: 0.08 }"
-        class="font-display text-4xl sm:text-6xl md:text-7xl lg:text-[76px] font-extrabold text-white tracking-[-0.04em] leading-[1.05] max-w-5xl mb-8 will-change-transform"
-      >
-        Everything you watch <span class="bg-gradient-to-r from-[#FF5733] to-[#FF8C66] bg-clip-text text-transparent">and read.</span><br />
-        One app.
-      </h1>
+      <!-- Macro-Headline: Clean 2-Line Architectural Force -->
+      <div class="max-w-6xl mb-10">
+        <h1 class="font-display font-black text-4xl sm:text-6xl md:text-7xl lg:text-[84px] text-white tracking-[-0.04em] leading-[0.98] uppercase mb-8">
+          Everything you watch and read.<br />
+          <span class="text-[#FF3B30]">One application.</span>
+        </h1>
 
-      <!-- Lead paragraph -->
-      <p
-        v-parallax="{ speed: 0.12 }"
-        class="text-lg sm:text-xl text-[#8E8E99] max-w-2xl leading-relaxed mb-10 will-change-transform"
-      >
-        Anime, movies, series, manga, light novels and live TV from over a thousand sources — free, open source, and on every screen you own.
-      </p>
+        <p class="font-sans text-lg sm:text-2xl text-[#858592] max-w-3xl leading-relaxed font-light">
+          Anime, cinema, serials, manga, light novels, and live television streams unified from over 1,000 independent sources. Free, open source, on every display.
+        </p>
+      </div>
 
-      <!-- Actions -->
-      <div
-        v-parallax="{ speed: 0.15 }"
-        class="flex flex-wrap items-center justify-center gap-4 mb-16 will-change-transform"
-      >
+      <!-- Tactical Action Bar -->
+      <div class="flex flex-wrap items-center gap-5 pt-8 border-t border-white/[0.08] mb-16 font-mono">
         <a
           href="#download"
-          class="group inline-flex items-center gap-3 pl-8 pr-3 py-3.5 rounded-full bg-[#7C5CFF] hover:bg-[#6C4CEE] active:scale-95 text-white text-base font-semibold transition-all duration-300 shadow-xl shadow-[#7C5CFF]/25"
+          class="inline-flex items-center gap-3 px-8 py-4 bg-[#FF3B30] hover:bg-[#E0352B] active:scale-95 text-white font-semibold text-xs tracking-widest uppercase transition-all duration-200"
         >
-          <span>Download Sozo</span>
-          <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300">
-            <svg class="w-4 h-4" viewBox="0 0 16 16" fill="none">
-              <path d="M8 2V11M8 11L4.5 7.5M8 11L11.5 7.5M3 14H13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
+          <span>DOWNLOAD RELEASE</span>
+          <span class="text-white/60">→</span>
         </a>
 
         <a
-          href="#platforms"
-          class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-white/[0.04] text-white text-base font-medium border border-white/10 hover:bg-white/[0.08] active:scale-95 transition-all duration-200"
+          href="https://github.com/professorDeveloper/sozo"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-3 px-8 py-4 bg-white/[0.03] hover:bg-white/[0.08] border border-white/10 text-white font-medium text-xs tracking-widest uppercase transition-all duration-200"
         >
-          <span>All 6 platforms</span>
-          <svg class="w-4 h-4 text-[#8E8E99]" viewBox="0 0 16 16" fill="none">
-            <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+          <span>INSPECT SOURCE CODE</span>
+          <span class="text-white/40">↗</span>
         </a>
+
+        <div class="hidden lg:flex items-center gap-4 ml-auto text-xs text-[#858592]">
+          <span>STATUS: OPERATIONAL</span>
+          <span class="text-white/20">|</span>
+          <span>TRACKERS: 0</span>
+          <span class="text-white/20">|</span>
+          <span>EXTENSIONS: 1,000+</span>
+        </div>
       </div>
 
-      <!-- 3D Hardware Display Stage -->
-      <div class="relative w-full max-w-4xl mx-auto pt-4 preserve-3d">
-        <!-- Floating 3D Depth Card 1: 1,000+ Sources -->
-        <div
-          v-parallax="{ speed: 0.28 }"
-          class="hidden sm:flex absolute -left-6 top-16 z-20 items-center gap-3 p-4 rounded-2xl bg-[#111116]/90 border border-white/10 backdrop-blur-xl shadow-2xl double-bezel will-change-transform"
-        >
-          <div class="w-10 h-10 rounded-xl bg-[#FF5733]/15 flex items-center justify-center text-[#FF5733] font-bold text-sm">
-            1K+
+      <!-- Layered Parallax Cinematic Stills Chamber (No Fake 3D Phones) -->
+      <div class="relative w-full border border-white/10 bg-[#111116] p-4 sm:p-6 overflow-hidden">
+        <!-- Frame Telemetry Meta -->
+        <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-4 font-mono text-[10px] text-[#858592] uppercase tracking-widest">
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 bg-emerald-400"></span>
+            <span>LIVE BUFFER // MEDIA DISPLAY MATRIX</span>
           </div>
-          <div class="text-left">
-            <span class="block font-display font-bold text-sm text-white">Online Sources</span>
-            <span class="font-mono text-[11px] text-[#8E8E99]">Anime, Manga & TV</span>
-          </div>
+          <span>RESOLUTION: 4K UHD NATIVE</span>
         </div>
 
-        <!-- Floating 3D Depth Card 2: 0 Ads Forever -->
-        <div
-          v-parallax="{ speed: -0.15 }"
-          class="hidden sm:flex absolute -right-6 top-24 z-20 items-center gap-3 p-4 rounded-2xl bg-[#111116]/90 border border-white/10 backdrop-blur-xl shadow-2xl double-bezel will-change-transform"
-        >
-          <div class="w-10 h-10 rounded-xl bg-[#7C5CFF]/15 flex items-center justify-center text-[#7C5CFF] font-bold text-sm">
-            0
-          </div>
-          <div class="text-left">
-            <span class="block font-display font-bold text-sm text-white">Zero Ads. Ever.</span>
-            <span class="font-mono text-[11px] text-[#8E8E99]">100% Free & Open Source</span>
-          </div>
-        </div>
-
-        <!-- Centered 3D Machined Device Frame (Double-Bezel) -->
-        <div
-          ref="deviceRef"
-          class="relative mx-auto max-w-3xl rounded-[2.5rem] bg-gradient-to-b from-white/15 to-white/5 p-2 shadow-2xl glow-violet will-change-transform transition-transform duration-500"
-          style="transform: rotateX(8deg) rotateY(-2deg);"
-        >
-          <div class="rounded-[2.25rem] bg-[#08080B] border border-white/10 overflow-hidden shadow-inner relative aspect-[16/10]">
-            <!-- Top App Bar -->
-            <div class="h-10 px-6 bg-[#111116] border-b border-white/5 flex items-center justify-between">
-              <div class="flex items-center gap-2">
-                <span class="w-3 h-3 rounded-full bg-[#FF5F56]/80"></span>
-                <span class="w-3 h-3 rounded-full bg-[#FFBD2E]/80"></span>
-                <span class="w-3 h-3 rounded-full bg-[#27C93F]/80"></span>
-              </div>
-              <span class="font-mono text-[11px] text-white/40 tracking-wider">sozo.stream / v3.2.0</span>
-              <div class="w-12"></div>
+        <!-- 3-Column Photographic Grid with Asymmetric Parallax -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Frame 01: Cinema Player -->
+          <div
+            v-parallax="{ speed: 0.08 }"
+            class="relative aspect-[16/10] bg-[#09090C] border border-white/10 overflow-hidden group will-change-transform"
+          >
+            <img
+              src="../assets/img/image.png"
+              alt="Cinema Stream"
+              class="w-full h-full object-cover filter contrast-110 brightness-90 group-hover:scale-105 transition-transform duration-700"
+            />
+            <div class="absolute bottom-2 left-2 right-2 p-2 bg-[#09090C]/90 backdrop-blur-md border border-white/10 flex justify-between items-center text-[10px] font-mono text-white/80">
+              <span>01 // ANIME4K ENGINE</span>
+              <span class="text-[#FF3B30]">1080P/60FPS</span>
             </div>
+          </div>
 
-            <!-- Showcase Preview Image -->
+          <!-- Frame 02: Reader Mode -->
+          <div
+            v-parallax="{ speed: -0.06 }"
+            class="relative aspect-[16/10] bg-[#09090C] border border-white/10 overflow-hidden group will-change-transform"
+          >
+            <img
+              src="../assets/img/scrren.png"
+              alt="Manga Reader"
+              class="w-full h-full object-cover filter contrast-110 brightness-90 group-hover:scale-105 transition-transform duration-700"
+            />
+            <div class="absolute bottom-2 left-2 right-2 p-2 bg-[#09090C]/90 backdrop-blur-md border border-white/10 flex justify-between items-center text-[10px] font-mono text-white/80">
+              <span>02 // BOOK MODE (284 SOURCES)</span>
+              <span class="text-emerald-400">PAGINATED</span>
+            </div>
+          </div>
+
+          <!-- Frame 03: Broadcast Stage -->
+          <div
+            v-parallax="{ speed: 0.12 }"
+            class="relative aspect-[16/10] bg-[#09090C] border border-white/10 overflow-hidden group will-change-transform"
+          >
             <img
               src="../assets/img/screen2.png"
-              alt="Sozo App interface"
-              class="w-full h-full object-cover object-top filter contrast-105"
+              alt="Television Display"
+              class="w-full h-full object-cover filter contrast-110 brightness-90 group-hover:scale-105 transition-transform duration-700"
             />
+            <div class="absolute bottom-2 left-2 right-2 p-2 bg-[#09090C]/90 backdrop-blur-md border border-white/10 flex justify-between items-center text-[10px] font-mono text-white/80">
+              <span>03 // TELEVISION & EPG GUIDE</span>
+              <span class="text-cyan-400">BROADCAST</span>
+            </div>
           </div>
         </div>
+      </div>
+
+      <!-- Supported Architectures Line -->
+      <div class="pt-8 flex flex-wrap items-center gap-3 font-mono text-xs text-[#858592]">
+        <span class="text-white/40 uppercase tracking-widest text-[11px] mr-2">NATIVE TARGETS:</span>
+        <span class="px-2.5 py-1 bg-white/[0.04] border border-white/10 text-white/90">[ ANDROID ]</span>
+        <span class="px-2.5 py-1 bg-white/[0.04] border border-white/10 text-white/90">[ IOS ]</span>
+        <span class="px-2.5 py-1 bg-white/[0.04] border border-white/10 text-white/90">[ WINDOWS ]</span>
+        <span class="px-2.5 py-1 bg-white/[0.04] border border-white/10 text-white/90">[ MACOS ]</span>
+        <span class="px-2.5 py-1 bg-white/[0.04] border border-white/10 text-white/90">[ LINUX ]</span>
+        <span class="px-2.5 py-1 bg-white/[0.04] border border-white/10 text-white/90">[ ANDROID TV ]</span>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
-
-const deviceRef = ref(null)
-
-let handleMouseMove = null
-
-onMounted(() => {
-  const el = deviceRef.value
-  if (!el) return
-
-  handleMouseMove = (e) => {
-    const rect = el.getBoundingClientRect()
-    const x = e.clientX - rect.left
-    const y = e.clientY - rect.top
-    const centerX = rect.width / 2
-    const centerY = rect.height / 2
-
-    const rotX = ((y - centerY) / centerY) * -10 + 6
-    const rotY = ((x - centerX) / centerX) * 10 - 2
-
-    el.style.transform = `rotateX(${rotX.toFixed(2)}deg) rotateY(${rotY.toFixed(2)}deg)`
-  }
-
-  window.addEventListener('mousemove', handleMouseMove, { passive: true })
-})
-
-onBeforeUnmount(() => {
-  if (handleMouseMove) window.removeEventListener('mousemove', handleMouseMove)
-})
+// Hero Component: Serious Swiss Brutalist Architecture
 </script>
