@@ -1,13 +1,13 @@
 <template>
-  <div class="font-sans bg-[#08080B] text-[#F5F5F7] min-h-screen selection:bg-[#7C5CFF] selection:text-white">
+  <div class="bg-[#09090C] text-[#F4F4F6] min-h-screen selection:bg-[#FF3B30] selection:text-white">
     <Navbar />
     <main>
       <Hero />
       <StatsBar />
-      <DeviceStage />
-      <BentoFeatures />
-      <PlatformGrid />
-      <CommunityCTA />
+      <ArchitectureShowcase />
+      <FeaturesMatrix />
+      <PlatformMatrix />
+      <CommunityTerminal />
     </main>
     <Footer />
   </div>
@@ -17,15 +17,15 @@
 import Navbar from './components/Navbar.vue'
 import Hero from './components/Hero.vue'
 import StatsBar from './components/StatsBar.vue'
-import DeviceStage from './components/DeviceStage.vue'
-import BentoFeatures from './components/BentoFeatures.vue'
-import PlatformGrid from './components/PlatformGrid.vue'
-import CommunityCTA from './components/CommunityCTA.vue'
+import ArchitectureShowcase from './components/ArchitectureShowcase.vue'
+import FeaturesMatrix from './components/FeaturesMatrix.vue'
+import PlatformMatrix from './components/PlatformMatrix.vue'
+import CommunityTerminal from './components/CommunityTerminal.vue'
 import Footer from './components/Footer.vue'
 
 import { useSmoothScroll } from './composables/useSmoothScroll'
 
-// High-framerate Lenis smooth scroll engine
+// Hardware-accelerated smooth scrolling engine
 useSmoothScroll({
   duration: 1.15,
   wheelMultiplier: 0.95,
